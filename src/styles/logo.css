@@ -1,0 +1,65 @@
+.logo-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #f8f3e9;
+  border: 2px solid #c9a66b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(201, 166, 107, 0.5);
+  transition: all 0.3s ease;
+  position: relative;
+  /* Ensure aspect ratio is maintained */
+  aspect-ratio: 1 / 1;
+}
+
+.logo-container:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(201, 166, 107, 0.6);
+  border-color: #b38d4d;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif; /* Elegant serif font */
+  text-align: center;
+  line-height: 1.2;
+  position: relative;
+  z-index: 2;
+}
+
+.logo-text .argan {
+  display: block;
+  color: #7d4b32; /* Rich brown color */
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.logo-text .beauty {
+  display: block;
+  color: #c9a66b; /* Gold/amber color */
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
+.argan-leaf {
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  bottom: 6px;
+  right: 6px;
+  opacity: 0.7;
+  transition: all 0.4s ease;
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,0.15));
+  /* Maintain aspect ratio of the leaf */
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+}
+
+.logo-container:hover .argan-leaf {
+  transform: rotate(25deg);
+  opacity: 1;
+}
